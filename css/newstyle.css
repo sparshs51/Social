@@ -1,0 +1,116 @@
+.btn-social, .badge, .btn-social, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive {
+    background: #f3ad00;
+}
+
+
+body {
+    background: #edf1f5;
+font-family: Hi Melody, cursive;
+font-size: 1.5em;
+font-weight: 20px;
+}
+
+nav {
+    background: #4F5467;
+}
+
+
+
+.badge {
+    padding: 4px 8px;
+    font-size: 11px;
+}
+
+nav .badge {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.back {
+	background-color: #4F5467;
+}
+
+
+/* Sidebar */
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+} 
+ 
+p{
+
+}
+
+a, a:link, a:visited, a:focus {
+    color: #404040;
+    text-decoration: none;
+}
+
+.row{
+
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+h1{
+
+}
+
+
+.swiper-container {
+    width: auto;
+    height: 200px;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+

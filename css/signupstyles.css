@@ -1,0 +1,275 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background: url(../images/back.jpg) no-repeat;
+	background-size: 100%; 
+    color: #5e6a68;
+	font-size: 10px;
+	background-color: ;
+	font-family: Dancing Script, cursive; 
+	
+	text-shadow:0.4px 0.4px 0.4px #222;
+}
+
+a, a:visited {
+	outline:none;
+	color:#1c4f64;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+section, footer, header{
+	display: block;
+}
+
+h1{
+	font-family: Dancing Script, cursive; 
+	font-size: 36px;
+	margin-bottom:50px;
+	color:#59667a;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+}
+
+
+
+#main{
+	width:440px;
+	margin:80px auto 120px;
+	
+	position:relative;
+	text-align:center;
+}
+
+#main form{
+	width:440px;
+	height:750px;
+	background:url('../img/form_bg.png') no-repeat;
+	padding-top: 50px;
+	opacity: 0.94;
+}
+
+#main form .row{
+	position:relative;
+}
+
+#main form .row.error:after,
+#main form .row.success:after{
+	content:'';
+	
+	position:absolute;
+	right: 60px;
+    top: 8px;
+	width:32px;
+	height:32px;
+	background:url('../img/icons.png') no-repeat;
+}
+
+#main form .row.error:after{
+	background-position: 0 -79px;
+}
+
+#main form input[type=text],
+#main form input[type=password]{
+
+	border:none;
+	background:url('../img/text-boxes.png') no-repeat top left;
+	font:14px 'Segoe UI','Arial',sans-serif;
+	color:#888;
+	
+	outline:none;
+	
+    height: 48px;
+    margin: 0 auto 22px;
+    padding: 0 10px 0 50px;
+    width: 278px;
+}
+
+#main form input[disabled]{
+	opacity: 0.5;
+}
+
+#main form .email input{
+	background-position:0 0;
+}
+
+#main form .email input:focus{
+	background-position:0 -48px;
+}
+
+#main form .pass input{
+	background-position:0 -96px;
+}
+
+#main form .pass input:focus{
+	background-position:0 -144px;
+}
+
+#main form input[type=number]{
+
+	border:none;
+	background:url('../img/text-boxes.png') no-repeat top left;
+	font:14px 'Segoe UI','Arial',sans-serif;
+	color:#888;
+	
+	outline:none;
+	
+    height: 48px;
+    margin: 0 auto 22px;
+    padding: 0 10px 0 50px;
+    width: 278px;
+}
+
+
+
+
+
+
+#main form input[type=submit]{
+	
+	border: 1px solid #004C9B;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.3);
+    color: #D3EBFF;
+    cursor: pointer;
+    display: block;
+    font: bold 24px Cambria,"Hoefler Text",serif;
+    margin: 10px auto 0;
+    padding: 10px;
+    text-shadow: 0 -1px 0 #444444;
+    width: 410px;
+    
+	background-color:#a2a2a2;
+	
+	background-image: linear-gradient(top, #0496DA 0%, #0067CD 100%);
+	background-image: -o-linear-gradient(top, #0496DA 0%, #0067CD 100%);
+	background-image: -moz-linear-gradient(top, #0496DA 0%, #0067CD 100%);
+	background-image: -webkit-linear-gradient(top, #0496DA 0%, #0067CD 100%);
+	background-image: -ms-linear-gradient(top, #0496DA 0%, #0067CD 100%);
+}
+
+#main form input[type=submit]:hover{
+	
+	background-color:#a2a2a2;
+	
+	background-image: linear-gradient(top, #0383d3 0%, #004c9b 100%);
+	background-image: -o-linear-gradient(top, #0383d3 0%, #004c9b 100%);
+	background-image: -moz-linear-gradient(top, #0383d3 0%, #004c9b 100%);
+	background-image: -webkit-linear-gradient(top, #0383d3 0%, #004c9b 100%);
+	background-image: -ms-linear-gradient(top, #0383d3 0%, #004c9b 100%);
+}
+
+#main form input[type=submit]:active{
+	
+	background-color:#a2a2a2;
+	
+	background-image: linear-gradient(top, #026fcb 0%, #004c9b 100%);
+	background-image: -o-linear-gradient(top, #026fcb 0%, #004c9b 100%);
+	background-image: -moz-linear-gradient(top, #026fcb 0%, #004c9b 100%);
+	background-image: -webkit-linear-gradient(top, #026fcb 0%, #004c9b 100%);
+	background-image: -ms-linear-gradient(top, #026fcb 0%, #004c9b 100%);
+}
+
+
+/*----------------------------
+	The Arrow
+-----------------------------*/
+
+
+#main form .arrow{
+    background: url("../img/arrow.png") no-repeat -10px 0;
+    height: 120px;
+    left: 214px;
+    position: absolute;
+    top: 392px;
+    width: 11px;
+    
+   	/* Defining a smooth CSS3 animation for turning the arrow */
+    
+    -moz-transition:0.3s;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    -ms-transition:0.3s;
+    transition:0.3s;
+    
+    /* Putting the arrow in its initial position */
+    
+	-moz-transform: rotate(-134deg);
+	-webkit-transform: rotate(-134deg);
+	-o-transform: rotate(-134deg);
+	-ms-transform: rotate(-134deg);
+	transform: rotate(-134deg);
+}
+
+#main form .arrowCap{
+	background: url("../img/arrow.png") no-repeat -43px 0;
+	height: 20px;
+	left: 208px;
+	position: absolute;
+	top: 443px;
+	width: 20px;
+	z-index: 10;
+}
+
+#main form .meterText{
+	color: #575757;
+	font-size: 13px;
+	left: 189px;
+	line-height: 1.1;
+	position: absolute;
+	top: 485px;
+	text-shadow: none;
+	width: 60px;
+}
+
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+
+
+
+footer h2{
+	color: #EEEEEE;
+	font-size: 14px;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -400px;
+	padding: 13px 0 0;
+	position: absolute;
+	width: 540px;
+}
+
+footer h2 i{
+	font-style:normal;
+	color:#888;
+}
+
+footer a.tzine,a.tzine:visited{
+	color: #999999;
+	font-size: 12px;
+	left: 50%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
+footer a i{
+	color:#ccc;
+	font-style: normal;
+}
+
+footer a i b{
+	color:#c92020;
+	font-weight: normal;
+}
